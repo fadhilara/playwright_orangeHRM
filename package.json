@@ -1,0 +1,35 @@
+{
+  "name": "pw_orhrm1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "cucumberWithTS": "cucumber-js src/features/*.feature --require-module ts-node/register --require src/step-definitions/**/**/*.ts --require src/utils/cucumber-timeout.ts",
+    "precucumber": "rimraf reports && mkdir reports",
+    "login": "cucumber-js src/features/*.feature --require-module ts-node/register --require src/step-definitions/**/**/*.ts --require src/utils/cucumber-timeout.ts --tags @login",
+    "create": "cucumber-js src/features/*.feature --require-module ts-node/register --require src/step-definitions/**/**/*.ts --require src/utils/cucumber-timeout.ts --tags @create",
+    "sort": "cucumber-js src/features/*.feature --require-module ts-node/register --require src/step-definitions/**/**/*.ts --require src/utils/cucumber-timeout.ts --tags @sort",
+    "cucumber": "npx cucumber-js && ts-node ./src/index.ts",
+    "cucumberByPass": "npx cucumber-js 'src/features/**/*.feature' --require-module ts-node/register --require 'src/step-definitions/hooks/**/*.ts' --require 'src/step-definitions/**/*.ts' --format progress --format summary",
+    "test:all": "./run-all.sh",
+    "regressionWebkit": "UI_AUTOMATION_BROWSER=webkit cucumber-js ./src/features/*.feature --require-module ts-node/register --require ./src/step-definitions/**/**/*.ts  --require ./src/utils/cucumber-timeout.ts --format html:./reports/webkit/report.html --parallel ${parallelValue} --tags @regression",
+    "regressionFirefox": "UI_AUTOMATION_BROWSER=firefox cucumber-js ./src/features/*.feature --require-module ts-node/register --require ./src/step-definitions/**/**/*.ts  --require ./src/utils/cucumber-timeout.ts --format html:./reports/webkit/report.html --parallel ${parallelValue} --tags @regression",
+    "regressionChromium": "UI_AUTOMATION_BROWSER=chromium cucumber-js ./src/features/*.feature --require-module ts-node/register --require ./src/step-definitions/**/**/*.ts  --require ./src/utils/cucumber-timeout.ts --format html:./reports/webkit/report.html --parallel ${parallelValue} --tags @regression"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.3.0",
+    "@cucumber/html-formatter": "^22.0.0",
+    "@faker-js/faker": "^10.1.0",
+    "@playwright/test": "1.56.0",
+    "@types/dotenv": "^6.1.1",
+    "@types/node": "^24.7.2",
+    "dotenv": "^17.2.3",
+    "playwright": "^1.56.0",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

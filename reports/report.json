@@ -1,0 +1,526 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "orange-hrm-login;validate-add-job-title",
+        "keyword": "Scenario",
+        "line": 8,
+        "name": "Validate Add Job Title",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1804567334
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user is logged in and navigated to Job Titles page",
+            "match": {
+              "location": "src/step-definitions/JobTitle_Steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8417953500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "user click add button",
+            "match": {
+              "location": "src/step-definitions/JobTitle_Steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1218414957
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "user type job title \"devops\"",
+            "match": {
+              "location": "src/step-definitions/JobTitle_Steps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 843865125
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "user type job description \"automate software development processes\"",
+            "match": {
+              "location": "src/step-definitions/JobTitle_Steps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7466875
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "user upload job specification \"devops_jobspec.csv\"",
+            "match": {
+              "location": "src/step-definitions/JobTitle_Steps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14177541
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "user type note \"urgent hiring & wfo\"",
+            "match": {
+              "location": "src/step-definitions/JobTitle_Steps.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9268707
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "user click save button",
+            "match": {
+              "location": "src/step-definitions/JobTitle_Steps.ts:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 52423292
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "user should be able to directed to Job Titles page",
+            "match": {
+              "location": "src/step-definitions/JobTitle_Steps.ts:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6425804207
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 332100542
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@create",
+            "line": 7
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "orange-hrm-login;validate-sort-job-title",
+        "keyword": "Scenario Outline",
+        "line": 23,
+        "name": "Validate Sort Job Title",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1313974749
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user is logged in and navigated to Job Titles page",
+            "match": {
+              "location": "src/step-definitions/JobTitle_Steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7465540041
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "user click sort job title by 'ascending'",
+            "match": {
+              "location": "src/step-definitions/JobTitle_Steps.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1829813458
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "user should be able to see job titles in 'ascending order'",
+            "match": {
+              "location": "src/step-definitions/JobTitle_Steps.ts:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 152716875
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 379952459
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@sort",
+            "line": 17
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "orange-hrm-login;validate-sort-job-title",
+        "keyword": "Scenario Outline",
+        "line": 24,
+        "name": "Validate Sort Job Title",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1216405292
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user is logged in and navigated to Job Titles page",
+            "match": {
+              "location": "src/step-definitions/JobTitle_Steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6431373250
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "user click sort job title by 'descending'",
+            "match": {
+              "location": "src/step-definitions/JobTitle_Steps.ts:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7986651417
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "user should be able to see job titles in 'descending order'",
+            "match": {
+              "location": "src/step-definitions/JobTitle_Steps.ts:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5454665
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 361887166
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@sort",
+            "line": 17
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "orange-hrm-login",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Orange HRM Login",
+    "tags": [
+      {
+        "name": "@regression",
+        "line": 1
+      }
+    ],
+    "uri": "src/features/JobTitle.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "orange-hrm-login;validate-login-portal",
+        "keyword": "Scenario Outline",
+        "line": 15,
+        "name": "Validate Login Portal",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1207395042
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to the orangehrm",
+            "match": {
+              "location": "src/step-definitions/Login_Steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3352288416
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I type a username Admin",
+            "match": {
+              "location": "src/step-definitions/Login_Steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 815374416
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I type a password admin123",
+            "match": {
+              "location": "src/step-definitions/Login_Steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9843417
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I click on the login button",
+            "match": {
+              "location": "src/step-definitions/Login_Steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1489987874
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should be presented 'success'",
+            "match": {
+              "location": "src/step-definitions/Login_Steps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 136821124
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 327586040
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@login",
+            "line": 7
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "orange-hrm-login;validate-login-portal",
+        "keyword": "Scenario Outline",
+        "line": 16,
+        "name": "Validate Login Portal",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1175294125
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to the orangehrm",
+            "match": {
+              "location": "src/step-definitions/Login_Steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3195649792
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I type a username admin1",
+            "match": {
+              "location": "src/step-definitions/Login_Steps.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 819991290
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I type a password admin123",
+            "match": {
+              "location": "src/step-definitions/Login_Steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11918708
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I click on the login button",
+            "match": {
+              "location": "src/step-definitions/Login_Steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1937911124
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "I should be presented 'failed'",
+            "match": {
+              "location": "src/step-definitions/Login_Steps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 906956125
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 472100874
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@login",
+            "line": 7
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "orange-hrm-login",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Orange HRM Login",
+    "tags": [
+      {
+        "name": "@regression",
+        "line": 1
+      }
+    ],
+    "uri": "src/features/Login.feature"
+  }
+]
