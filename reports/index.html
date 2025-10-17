@@ -2,38 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Cucumber Test Reports</title>
+  <title>🧪 Cucumber Test Dashboard</title>
   <style>
-    body {
-      font-family: sans-serif;
-      padding: 2rem;
-      background: #f9f9f9;
-    }
-    h1 {
-      color: #333;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      margin: 1rem 0;
-    }
-    a {
-      text-decoration: none;
-      color: #007acc;
-      font-weight: bold;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
+    body { font-family: 'Segoe UI', sans-serif; background: #f0f4f8; padding: 2rem; }
+    h1 { color: #333; margin-bottom: 1rem; }
+    table { width: 100%; border-collapse: collapse; background: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
+    th, td { padding: 1rem; text-align: left; border-bottom: 1px solid #eee; }
+    th { background: #007acc; color: white; }
+    tr:hover { background: #f9f9f9; }
+    .status { font-weight: bold; padding: 0.3rem 0.6rem; border-radius: 4px; }
+    .pass { color: #2e7d32; background: #c8e6c9; }
+    .fail { color: #c62828; background: #ffcdd2; }
+    .link { color: #007acc; text-decoration: none; }
+    .link:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
-  <h1>🧪 Cucumber Test Reports</h1>
-  <ul>
-    <li><a href="./firefox/report.html" target="_blank">Firefox Report</a></li>
-    <li><a href="./webkit/report.html" target="_blank">WebKit Report</a></li>
-  </ul>
+  <h1>🧪 Cucumber Test Dashboard</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Browser</th>
+        <th>Status</th>
+        <th>Executed At</th>
+        <th>Report</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+    <tr>
+      <td>chromium</td>
+      <td><span class="status ">Unknown</span></td>
+      <td>Jum, 17 Okt 2025, 21.24</td>
+      <td><a class="link" href="./chromium/report.html" target="_blank">View Report</a></td>
+    </tr>
+
+    <tr>
+      <td>firefox</td>
+      <td><span class="status ">Unknown</span></td>
+      <td>Jum, 17 Okt 2025, 21.24</td>
+      <td><a class="link" href="./firefox/report.html" target="_blank">View Report</a></td>
+    </tr>
+
+    <tr>
+      <td>webkit</td>
+      <td><span class="status ">Unknown</span></td>
+      <td>Jum, 17 Okt 2025, 21.24</td>
+      <td><a class="link" href="./webkit/report.html" target="_blank">View Report</a></td>
+    </tr>
+    </tbody>
+  </table>
 </body>
 </html>

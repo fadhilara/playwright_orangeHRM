@@ -13,7 +13,7 @@
     "test:all": "./run-all.sh",
     "regressionWebkit": "UI_AUTOMATION_BROWSER=webkit cucumber-js ./src/features/*.feature --require-module ts-node/register --require ./src/step-definitions/**/**/*.ts  --require ./src/utils/cucumber-timeout.ts --format html:./reports/webkit/report.html --parallel ${parallelValue} --tags @regression",
     "regressionFirefox": "UI_AUTOMATION_BROWSER=firefox cucumber-js ./src/features/*.feature --require-module ts-node/register --require ./src/step-definitions/**/**/*.ts  --require ./src/utils/cucumber-timeout.ts --format html:./reports/webkit/report.html --parallel ${parallelValue} --tags @regression",
-    "regressionChromium": "UI_AUTOMATION_BROWSER=chromium cucumber-js ./src/features/*.feature --require-module ts-node/register --require ./src/step-definitions/**/**/*.ts  --require ./src/utils/cucumber-timeout.ts --format html:./reports/webkit/report.html --parallel ${parallelValue} --tags @regression"
+    "update:dashboard": "node update-dashboard.js"
   },
   "keywords": [],
   "author": "",

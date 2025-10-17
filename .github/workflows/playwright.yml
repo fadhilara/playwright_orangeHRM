@@ -49,6 +49,12 @@ jobs:
       uses: actions/download-artifact@v4
       with:
         path: reports
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+          node-version: 18
+    - name: Update dashboard index.html
+      run: node update-dashboard.js
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
