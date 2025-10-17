@@ -17,7 +17,7 @@ jobs:
     env:
       UI_AUTOMATION_BROWSER: ${{ matrix.browser }}
       PARALLEL: 2
-      RETRY: 0
+      RETRY: 1
     steps:
     - uses: actions/checkout@v4
     - uses: actions/setup-node@v4
@@ -46,7 +46,7 @@ jobs:
         path: playwright-report/
         retention-days: 30
     - name: Download all reports
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         path: reports
     - name: Deploy to GitHub Pages
