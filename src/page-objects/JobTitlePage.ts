@@ -4,7 +4,6 @@ import path from 'path';
 import { faker } from '@faker-js/faker';
 
 const url = 'https://opensource-demo.orangehrmlive.com/web/index.php/';
-// https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewJobTitleList
 
 export class JobTitlePage extends BasePage {
 
