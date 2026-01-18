@@ -6,11 +6,13 @@
     "cucumberWithTS": "cucumber-js src/features/*.feature --require-module ts-node/register --require src/step-definitions/**/**/*.ts --require src/utils/cucumber-timeout.ts",
     "precucumber": "rimraf reports && mkdir reports",
     "login": "cucumber-js src/features/*.feature --require-module ts-node/register --require src/step-definitions/**/**/*.ts --require src/utils/cucumber-timeout.ts --tags @login",
+    "jobTitle": "cucumber-js src/features/*.feature --require-module ts-node/register --require src/step-definitions/**/**/*.ts --require src/utils/cucumber-timeout.ts --tags @jobTitle",
     "create": "cucumber-js src/features/*.feature --require-module ts-node/register --require src/step-definitions/**/**/*.ts --require src/utils/cucumber-timeout.ts --tags @create",
     "sort": "cucumber-js src/features/*.feature --require-module ts-node/register --require src/step-definitions/**/**/*.ts --require src/utils/cucumber-timeout.ts --tags @sort",
     "cucumber": "npx cucumber-js && ts-node ./src/index.ts",
     "cucumberByPass": "npx cucumber-js 'src/features/**/*.feature' --require-module ts-node/register --require 'src/step-definitions/hooks/**/*.ts' --require 'src/step-definitions/**/*.ts' --format progress --format summary",
     "test:all": "./run-all.sh",
+    "regression": "cucumber-js src/features/*.feature --require-module ts-node/register --require src/step-definitions/**/**/*.ts --tags @regression --format json:reports/report.json --format html:reports/report.html",
     "regressionWebkit": "UI_AUTOMATION_BROWSER=webkit cucumber-js ./src/features/*.feature --require-module ts-node/register --require ./src/step-definitions/**/**/*.ts  --require ./src/utils/cucumber-timeout.ts --format html:./reports/webkit/report.html --parallel ${parallelValue} --tags @regression",
     "regressionFirefox": "UI_AUTOMATION_BROWSER=firefox cucumber-js ./src/features/*.feature --require-module ts-node/register --require ./src/step-definitions/**/**/*.ts  --require ./src/utils/cucumber-timeout.ts --format html:./reports/webkit/report.html --parallel ${parallelValue} --tags @regression",
     "update:dashboard": "node update-dashboard.js"

@@ -31,6 +31,7 @@ const profiles: ProfileCommands = {
     login: `${common} --tags "@login"`,
     create: `${common} --tags "@create"`,
     sort: `${common} --tags "@sort"`,
+    jobTitle: `${common} --tags "@jobTitle"`,
 }
 
 //Get the third command-line argument and assign it to the profile

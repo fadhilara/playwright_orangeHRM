@@ -1,5 +1,5 @@
-@regression
-Feature: Orange HRM Login
+@regression @jobTitle
+Feature: Orange HRM Job Title
 
 Background: Pre conditions
         Given user is logged in and navigated to Job Titles page
